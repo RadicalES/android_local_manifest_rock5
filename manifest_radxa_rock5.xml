@@ -22,4 +22,10 @@
        which minigbm has no backend for) -->
   <remove-project name="platform/external/minigbm" />
   <project path="external/minigbm" name="minigbm" remote="radicales" revision="android-15-rock5" />
+
+  <!-- hardware/interfaces: the AIDL default Bluetooth HAL with its rfkill
+       handling fixed (unblock on open as in AOSP main; use the hci device's
+       rfkill, not the board's rfkill-gpio enable line) -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="radicales" revision="android-15.0" />
 </manifest>

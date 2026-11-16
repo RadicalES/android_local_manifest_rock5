@@ -10,6 +10,7 @@ The device tree and its documentation are in
 | `device/radxa/rock5-kernel` | [RadicalES/android_device_radxa_rock5-kernel](https://github.com/RadicalES/android_device_radxa_rock5-kernel) (prebuilt kernel + U-Boot) | `android-15-rock5` |
 | `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/mesa](https://github.com/RadicalES/mesa) (Mesa 26.0 + Soong build) | `android-15-rock5` |
 | `external/minigbm` | [RadicalES/minigbm](https://github.com/RadicalES/minigbm) (replaces AOSP's) | `android-15-rock5` |
+| `hardware/interfaces` | [RadicalES/hardware_interfaces](https://github.com/RadicalES/hardware_interfaces) (replaces AOSP's; Bluetooth HAL rfkill fix) | `android-15.0` |
 
 ## Getting the source
 
