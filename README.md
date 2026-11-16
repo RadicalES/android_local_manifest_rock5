@@ -7,6 +7,7 @@ The device tree and its documentation are in
 | Path | Repository | Branch |
 |---|---|---|
 | `device/radxa/rock5` | [RadicalES/android_device_radxa_rock5](https://github.com/RadicalES/android_device_radxa_rock5) | `main` |
+| `device/radxa/rock5-kernel` | [RadicalES/android_device_radxa_rock5-kernel](https://github.com/RadicalES/android_device_radxa_rock5-kernel) (prebuilt kernel + U-Boot) | `android-15-rock5` |
 | `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/mesa](https://github.com/RadicalES/mesa) (Mesa 26.0 + Soong build) | `android-15-rock5` |
 | `external/minigbm` | [RadicalES/minigbm](https://github.com/RadicalES/minigbm) (replaces AOSP's) | `android-15-rock5` |
 
@@ -19,9 +20,12 @@ git clone https://github.com/RadicalES/android_local_manifest_rock5 .repo/local_
 repo sync -c -j8
 ```
 
-The kernel is not part of the tree: build it with `device/radxa/rock5/kernel/build-kernel.sh` and copy
-`Image` and the DTBs to `device/radxa/rock5-kernel/`. Building, the image script and flashing are
-described in the device tree's README.
+Building, the SD image script and flashing are described in the device tree's README:
+
+```sh
+. build/envsetup.sh && lunch aosp_rock5b-bp1a-userdebug && m
+device/radxa/rock5/tools/mkimg.sh
+```
 
 ## Branches
 
