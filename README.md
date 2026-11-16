@@ -8,6 +8,7 @@ The device tree and its documentation are in
 |---|---|---|
 | `device/radxa/rock5` | [RadicalES/android_device_radxa_rock5](https://github.com/RadicalES/android_device_radxa_rock5) | `main` |
 | `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/mesa](https://github.com/RadicalES/mesa) (Mesa 26.0 + Soong build) | `android-15-rock5` |
+| `external/minigbm` | [RadicalES/minigbm](https://github.com/RadicalES/minigbm) (replaces AOSP's) | `android-15-rock5` |
 
 ## Getting the source
 
@@ -16,13 +17,6 @@ mkdir aosp-15-rock5 && cd aosp-15-rock5
 repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r32
 git clone https://github.com/RadicalES/android_local_manifest_rock5 .repo/local_manifests -b android-15.0
 repo sync -c -j8
-```
-
-Then, until these move into forks:
-
-```sh
-# minigbm: gralloc drops DRM master after opening the display node
-git -C external/minigbm apply $PWD/device/radxa/rock5/patches/external/minigbm/*.patch
 ```
 
 The kernel is not part of the tree: build it with `device/radxa/rock5/kernel/build-kernel.sh` and copy
