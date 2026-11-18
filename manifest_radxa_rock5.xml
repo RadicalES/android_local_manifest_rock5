@@ -29,6 +29,9 @@
   <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="radicales" revision="android-15.0" />
 
+  <!-- hardware/radicales: board-neutral vendor HALs (DDC/CI monitor brightness) -->
+  <project path="hardware/radicales" name="android_hardware_radicales" remote="radicales" revision="main" />
+
   <!-- packages/apps/Settings: Ethernet IP configuration and NTP, network adb,
        fixed screen orientation and keep screen on; no crashes without Wi-Fi;
        config_show_ethernet_tethering -->
