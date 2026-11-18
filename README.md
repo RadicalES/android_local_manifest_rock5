@@ -11,6 +11,7 @@ The device tree and its documentation are in
 | `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/android_external_mesa](https://github.com/RadicalES/android_external_mesa) (Mesa 26.0 + Soong build) | `android-15-rock5` |
 | `external/minigbm` | [RadicalES/android_external_minigbm](https://github.com/RadicalES/android_external_minigbm) (replaces AOSP's) | `android-15-rock5` |
 | `hardware/interfaces` | [RadicalES/android_hardware_interfaces](https://github.com/RadicalES/android_hardware_interfaces) (replaces AOSP's; Bluetooth HAL rfkill fix) | `android-15.0` |
+| `packages/apps/Settings` | [RadicalES/android_packages_apps_Settings](https://github.com/RadicalES/android_packages_apps_Settings) (replaces AOSP's; Ethernet IP + NTP, network adb, orientation, keep screen on, no-Wi-Fi fixes) | `android-15.0` |
 
 ## Getting the source
 
