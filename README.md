@@ -8,7 +8,7 @@ The device tree and its documentation are in
 |---|---|---|
 | `device/radxa/rock5` | [RadicalES/android_device_radxa_rock5](https://github.com/RadicalES/android_device_radxa_rock5) | `main` |
 | `device/radxa/rock5-kernel` | [RadicalES/android_device_radxa_rock5-kernel](https://github.com/RadicalES/android_device_radxa_rock5-kernel) (prebuilt kernel + U-Boot) | `android-15-rock5` |
-| `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/android_external_mesa](https://github.com/RadicalES/android_external_mesa) (Mesa 26.0 + Soong build) | `android-15-rock5` |
+| `vendor/google/graphics/desktop/mesa3d/panvk` | [RadicalES/android_external_mesa](https://github.com/RadicalES/android_external_mesa) (Mesa 26.3.1 + Rocket/Teflon NPU, Soong build) | `android-15-rock5` |
 | `external/minigbm` | [RadicalES/android_external_minigbm](https://github.com/RadicalES/android_external_minigbm) (replaces AOSP's) | `android-15-rock5` |
 | `hardware/interfaces` | [RadicalES/android_hardware_interfaces](https://github.com/RadicalES/android_hardware_interfaces) (replaces AOSP's; Bluetooth HAL rfkill fix) | `android-15.0` |
 | `packages/apps/Settings` | [RadicalES/android_packages_apps_Settings](https://github.com/RadicalES/android_packages_apps_Settings) (replaces AOSP's; Ethernet IP + NTP, network adb, orientation, keep screen on, no-Wi-Fi fixes) | `android-15.0` |
